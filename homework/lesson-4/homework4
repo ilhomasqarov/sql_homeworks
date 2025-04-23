@@ -1,1 +1,35 @@
+--select distinct productname
+--from Products
 
+--select * from Products
+--where Price>'100'
+
+--select * from customers
+--where customername like 'A%'
+
+--select * from Products
+--order by price asc
+
+--select * from Employees
+--where Salary>'60000' and department='HR'
+
+--select isnull(email,'noemail@example.com')
+--from Employees
+
+--SELECT *
+--FROM Products
+--WHERE Price BETWEEN 50 AND 100;
+
+--select distinct category,productname
+--from products;
+
+--select distinct category,productname
+--from products
+--order by ProductName desc
+
+--select top 10 *
+--from Products
+--order by price desc
+
+ --select coalesce (firstname,lastname)
+ --from employees
