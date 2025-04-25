@@ -1,13 +1,13 @@
-select productname from Productss
+select productname from Products
 union
 select productname from OutOfStock
-EXEC sp_rename 'customerss', 'client';
+EXEC sp_rename 'customers', 'client';
 
-select productname from Productss
+select productname from Products
 union
 select productname from Products_Discounted
 
-select * from Productss
+select * from Products
 instersect
 select * from Products_Discounted
 
@@ -19,9 +19,9 @@ select *, case
   when price<=1000 then 'low'
   end as rate_level
 
-from Productss
+from Products
 
-select productname from Productss
+select productname from Products
 union
 select productname from OutOfStock
 
@@ -34,12 +34,12 @@ select *, case
     when price<=1000 then 'affordable'
 	end as rate_name
 
-from Productss
+from Products
 
-select * from Employeesss
+select * from Employees
 where age<25 or salary>60000
 
-select ProductName from Productss
+select ProductName from Products
 except
 select ProductName from Products_Discounted
 
